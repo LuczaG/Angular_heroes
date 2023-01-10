@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '@app/_models';
 import { HeroService } from '@app/_services/hero.service';
-import { MessageService } from '@app/_services/messages.service';
-
-
 
 @Component({
   selector: 'app-heroes',
@@ -13,11 +10,9 @@ import { MessageService } from '@app/_services/messages.service';
 export class HeroesComponent implements OnInit {
 
   heroes: Hero[] = [];
-  selectedHero?: Hero;
 
 
-  constructor(private heroService: HeroService, 
-              private messageService: MessageService) { }
+  constructor(private heroService: HeroService) { }
 
   // az itt megadott metódusok a komponenes 
   //betöltésekor automatikusan meghívódnak
@@ -25,10 +20,6 @@ export class HeroesComponent implements OnInit {
     this.getHeroes();
   }
 
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-    this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`);
-  }
 
   getHeroes(): void {
     this.heroService.getHeroes()
