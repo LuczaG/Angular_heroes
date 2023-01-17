@@ -6,13 +6,15 @@ import {HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HeroesComponent, HeroDetailComponent, DashboardComponent } from './_components';
 import { AppRoutingModule } from './app-routing.module';
+import { PageNotFoundComponent } from './_components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
     HeroDetailComponent,
-    DashboardComponent
+    DashboardComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

@@ -2,7 +2,7 @@
   "posts": [
     {
       "id": 1,
-      "name": "Spiderman"
+      "name": "Spiderman1"
     },
     {
       "id": 2,
@@ -43,18 +43,6 @@
     {
       "name": "Groot",
       "id": 11
-    },
-    {
-      "name": "Drax",
-      "id": 12
-    },
-    {
-      "name": "Drax",
-      "id": 13
-    },
-    {
-      "name": "Mantis",
-      "id": 14
     }
   ]
 }
